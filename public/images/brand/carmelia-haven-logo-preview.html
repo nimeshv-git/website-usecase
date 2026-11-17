@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carmelia Haven Official Animated Logo - Verification & Preview</title>
+  <style>
+    :root {
+      --bg-dark: #071f12;
+      --card-dark: #0b2919;
+      --gold: #d4af37;
+      --text-light: #f5f2eb;
+      --text-muted: #a3b899;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+    }
+    body {
+      background: var(--bg-dark);
+      color: var(--text-light);
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      font-family: "Georgia", serif;
+      font-size: 2.2rem;
+      font-weight: 300;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .card {
+      background: var(--card-dark);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 16px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card.light {
+      background: #fbf9f4;
+      color: #1a2a1d;
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    .card.light h3 {
+      color: #1a2a1d;
+    }
+    .card.light .badge {
+      background: rgba(26, 42, 29, 0.1);
+      color: #1a2a1d;
+    }
+    .card h3 {
+      font-size: 1.1rem;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    .preview-box {
+      width: 180px;
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 12px 0 20px 0;
+      position: relative;
+    }
+    /* Original Website CSS Animation */
+    .original-logo-wrapper {
+      position: relative;
+      width: 165px;
+      height: 165px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .original-logo-wrapper .center-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 164px;
+      height: 164px;
+    }
+    .original-logo-wrapper .ring-img {
+      width: 164px;
+      height: 164px;
+      animation: official-rotation 8s infinite linear;
+      -webkit-animation: official-rotation 8s infinite linear;
+    }
+    @keyframes official-rotation {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(359deg); }
+    }
+    @-webkit-keyframes official-rotation {
+      from { -webkit-transform: rotate(0deg); }
+      to { -webkit-transform: rotate(359deg); }
+    }
+    .meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 12px;
+      width: 100%;
+    }
+    .card.light .meta {
+      color: #637566;
+      border-top-color: rgba(0, 0, 0, 0.08);
+    }
+    .docs-card {
+      background: var(--card-dark);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+      border-radius: 16px;
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+    .docs-card h2 {
+      font-size: 1.3rem;
+      color: var(--gold);
+      margin-bottom: 16px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.9rem;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    th {
+      color: var(--gold);
+      font-weight: 600;
+    }
+    code {
+      font-family: Consolas, monospace;
+      color: #fce79a;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Carmelia Haven Official Animated Logo</h1>
+      <p class="subtitle">Extracted directly from the official website: <code>https://www.carmeliahaven.com/index.php</code></p>
+    </header>
+
+    <div class="grid">
+      <!-- 1. Original Website Live CSS Implementation -->
+      <div class="card">
+        <h3>1. Original Website Implementation</h3>
+        <span class="badge">Live CSS Rotation (Original Method)</span>
+        <div class="preview-box">
+          <div class="original-logo-wrapper">
+            <img src="./carmelia-haven-rotating-center.png" class="center-img" alt="Central Tree Emblem">
+            <img src="./carmelia-haven-rotating-ring.png" class="ring-img" alt="Rotating Text Ring">
+          </div>
+        </div>
+        <div class="meta">
+          <strong>Files:</strong> <code>rorate_logo_01.png</code> + <code>rorate_logo_02.png</code><br>
+          <strong>CSS:</strong> <code>animation: rotation 8s infinite linear</code>
+        </div>
+      </div>
+
+      <!-- 2. Standalone Animated SVG -->
+      <div class="card">
+        <h3>2. Standalone Animated SVG</h3>
+        <span class="badge">Native SVG CSS Animation</span>
+        <div class="preview-box">
+          <img src="./carmelia-haven-animated-logo.svg" width="164" height="164" alt="Animated SVG Logo">
+        </div>
+        <div class="meta">
+          <strong>File:</strong> <code>carmelia-haven-animated-logo.svg</code><br>
+          <strong>Format:</strong> Scalable Vector / Standalone (15.8 KB)
+        </div>
+      </div>
+
+      <!-- 3. Standalone Animated WebP -->
+      <div class="card">
+        <h3>3. Standalone Animated WebP</h3>
+        <span class="badge">Alpha-Channel Transparent WebP</span>
+        <div class="preview-box">
+          <img src="./carmelia-haven-animated-logo.webp" width="164" height="164" alt="Animated WebP Logo">
+        </div>
+        <div class="meta">
+          <strong>File:</strong> <code>carmelia-haven-animated-logo.webp</code><br>
+          <strong>Format:</strong> 60 Frames, 8s Loop, 8-bit Alpha
+        </div>
+      </div>
+
+      <!-- 4. Standalone Animated GIF -->
+      <div class="card">
+        <h3>4. Standalone Animated GIF</h3>
+        <span class="badge">Universal GIF Format</span>
+        <div class="preview-box">
+          <img src="./carmelia-haven-animated-logo.gif" width="164" height="164" alt="Animated GIF Logo">
+        </div>
+        <div class="meta">
+          <strong>File:</strong> <code>carmelia-haven-animated-logo.gif</code><br>
+          <strong>Format:</strong> 40 Frames, 8s Infinite Loop (167 KB)
+        </div>
+      </div>
+
+      <!-- 5. Light Background Preview -->
+      <div class="card light">
+        <h3>5. Light Background Check</h3>
+        <span class="badge">Sand / Light Surface Preview</span>
+        <div class="preview-box">
+          <div class="original-logo-wrapper">
+            <img src="./carmelia-haven-rotating-center.png" class="center-img" alt="Central Tree Emblem">
+            <img src="./carmelia-haven-rotating-ring.png" class="ring-img" alt="Rotating Text Ring">
+          </div>
+        </div>
+        <div class="meta">
+          Verifies pristine transparency on light surfaces.
+        </div>
+      </div>
+
+      <!-- 6. Static Brand Vectors -->
+      <div class="card">
+        <h3>6. Official Static Brand Vectors</h3>
+        <span class="badge">Original Vectors & Emblems</span>
+        <div class="preview-box" style="flex-direction: column; gap: 8px;">
+          <img src="./logo_emblem_carmeliahaven.png" width="90" height="90" alt="Emblem">
+          <img src="./logo_carmeliahaven.svg" width="140" alt="Full Logo">
+        </div>
+        <div class="meta">
+          <strong>Files:</strong> <code>logo_carmeliahaven.svg</code> &amp; <code>logo_emblem_carmeliahaven.png</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="docs-card">
+      <h2>Asset Extraction Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Property</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Official Page URL</strong></td>
+            <td><code>https://www.carmeliahaven.com/index.php</code></td>
+          </tr>
+          <tr>
+            <td><strong>Original Asset URLs</strong></td>
+            <td>
+              <code>https://www.carmeliahaven.com/images_ch/rorate_logo_01.png</code> (Rotating Ring)<br>
+              <code>https://www.carmeliahaven.com/images_ch/rorate_logo_02.png</code> (Center Tree)
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Original Implementation</strong></td>
+            <td>Two layered PNGs composed in a 165px circular container with CSS <code>@keyframes rotation</code></td>
+          </tr>
+          <tr>
+            <td><strong>Rotation Direction</strong></td>
+            <td>Clockwise (<code>0deg &rarr; 359deg</code>)</td>
+          </tr>
+          <tr>
+            <td><strong>Animation Duration</strong></td>
+            <td><code>8 seconds</code> per revolution</td>
+          </tr>
+          <tr>
+            <td><strong>Timing Function</strong></td>
+            <td><code>linear</code> (constant speed)</td>
+          </tr>
+          <tr>
+            <td><strong>Loop Count</strong></td>
+            <td><code>infinite</code> (continuous loop)</td>
+          </tr>
+          <tr>
+            <td><strong>Dimensions</strong></td>
+            <td>164px &times; 164px with RGBA transparent background</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
+
